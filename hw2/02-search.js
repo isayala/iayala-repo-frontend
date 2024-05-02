@@ -29,7 +29,8 @@ function display(characters, query) {
 
 function createCard(character, query) {
   const cardDiv = document.createElement("div");
-  cardDiv.classList.add("col-5", "d-inline-flex", "align-items-center");
+  cardDiv.classList.add("col-5", "d-inline-flex", "justify-content-end");
+  //cardDiv.classList.add("col-5", "d-inline-flex", "align-items-center");
 
   const card = document.createElement("div");
   card.classList.add("card", "h-100");
