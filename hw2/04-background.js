@@ -3,12 +3,13 @@ let intervalId;
 let backgroundColorInterval = 3000;
 
 const button = document.getElementById("startstop");
-const input = document.getElementById('input[type="text"]');
+const input = document.getElementById("seconds");
 
 function startBackgroundColorChange() {
+  clearInterval(intervalId);
   intervalId = setInterval(changeBackgroundColor, backgroundColorInterval);
   button.value = "Stop";
-  button.classList.remove("bg-success");
+  button.classList.remove("bg-primary");
   button.classList.add("bg-danger");
 }
 
@@ -45,7 +46,6 @@ input.addEventListener("input", function () {
   if (!isNaN(newValue) && newValue > 0) {
     backgroundColorInterval = newValue * 1000; // Convert seconds to milliseconds
     if (intervalId) {
-      clearInterval(intervalId);
       startBackgroundColorChange();
     }
   }
