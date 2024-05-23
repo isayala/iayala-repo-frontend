@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./Home.js";
 
 function Navbar() {
   return (
@@ -8,10 +9,14 @@ function Navbar() {
         <nav className="navbar ">
           <ul>
             <li>
-              <link to="./home">Home</link>
+              <Link to="/">Home</Link>
             </li>
           </ul>
         </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
     </Router>
   );

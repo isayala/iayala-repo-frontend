@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.js";
-import navbar from "Navbar.js";
+import Navbar from "./Navbar.js";
+import Home from "./Home.js";
 
 export default function App() {
   return (
