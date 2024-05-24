@@ -1,25 +1,25 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Home.js";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <Router>
-      <div>
-        <nav className="navbar ">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    </Router>
+    <nav className="navbar">
+      <ul>
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/list">List</Link>
+        </li>
+        <li>
+          <Link to="/population">Population</Link>
+        </li>
+        <li>
+          <Link to="/chart">Chart</Link>
+        </li>
+      </ul>
+    </nav>
   );
-}
+};
 
 export default Navbar;

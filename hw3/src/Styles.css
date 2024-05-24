@@ -1,0 +1,106 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.home {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 3em;
+}
+
+.navbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: lightblue;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  display: block;
+  width: 100%;
+  padding: 15px 1em;
+  text-decoration: none;
+  font-weight: lighter;
+  color: #333;
+}
+
+.navbar ul li a:hover {
+  background-color: lightyellow;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+.countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.country-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.country-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.country-flag {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.population-chart {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.population-title {
+  color: #333;
+  margin: 3rem auto;
+  font-family: sans-serif;
+}
+
+.pie-chart-container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.pie-chart-title {
+  margin-top: 3rem;
+  text-align: center;
+  color: #333;
+}
